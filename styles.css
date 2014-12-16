@@ -25,3 +25,28 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.spinning-dancer {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  position: absolute;
+}
+
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transfrom: scale(1,1) rotate(0deg);
+
+  }
+  50% {
+    -webkit-transform: scale(4,4) rotate(180deg);
+
+  }
+  100% {
+   -webkit-transform: scale(1,1) rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 1s linear infinite;
+}
