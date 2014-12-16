@@ -39,11 +39,11 @@ body, a:link, a:visited, a:active{
 
   }
   50% {
-    -webkit-transform: scale(4,4) rotate(180deg);
+    -webkit-transform: translate(400px, 200px) scale(4,4) rotate(180deg);
 
   }
   100% {
-   -webkit-transform: scale(1,1) rotate(360deg);
+   -webkit-transform: translate(-200px, 100px) scale(1,1) rotate(360deg);
   }
 }
 
