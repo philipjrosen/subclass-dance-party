@@ -25,3 +25,9 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.spinning-dancer {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+  position: absolute;
+}
