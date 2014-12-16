@@ -32,6 +32,24 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
+.madonna {
+  background-image: url("http://38.media.tumblr.com/fe15b6d03ef461405c260d5a6ef6ef06/tumblr_mjcdhsaojX1s7n30go1_500.gif");
+  background-size: 260px 200px;
+  background-repeat: no-repeat;
+  height: 260px;
+  width: 200px;
+  position: absolute;
+}
+
+.bart {
+  background-image: url("http://38.media.tumblr.com/5697f6394d15c43cab55d5622be1bdf9/tumblr_mq747zre4N1qfrrv2o1_500.gif");
+  background-size: 260px 200px;
+  background-repeat: no-repeat;
+  height: 260px;
+  width: 200px;
+  position: absolute;
+}
+
 
 @-webkit-keyframes rotating {
   0% {
