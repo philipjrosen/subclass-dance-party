@@ -3,15 +3,46 @@ $(document).ready(function(){
 
   $('body').on('click', '.madonna', function(event) {
     $(this).toggleClass('madonna bart');
-  });
-  $('.lineUp').on('click', function(event) {
-    $.each(window.dancers, function(index, dancer) {
-      if (dancer.hasClass('rotating')) {
-        dancer.toggleClass('rotating');
-      }
-      console.log(dancer);
-      dancer.css({left: window.innerWidth/2});
+    $('.lineUp').on('click', function(event) {
+      $.each(window.dancers, function(index, dancer) {
+        if (dancer.hasClass('rotating')) {
+          dancer.toggleClass('rotating');
+        }
+        console.log(dancer);
+        dancer.css({left: window.innerWidth/2});
+      });
     });
+  });
+
+  $('body').on('click', '.dancer', function(event) {
+    $(this).addClass('friend');
+    var $position = $(this).position();
+    var y1 = $position.top;
+    var x1  = $position.left;
+    var $dancerPosition, dist, x2, y2;
+    var clickedDancer = $(this)[0];
+
+    $.each(window.dancers, function(index, dancer) {
+      var currentDancer = dancer[0];
+      if (currentDancer !== clickedDancer) {
+
+        $dancerPosition = dancer.position();
+        y2 = $dancerPosition.top;
+        x2 = $dancerPosition.left;
+
+        dist = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+
+        if (dist <= 100) {
+
+          dancer.addClass('friend');
+
+          console.log(dist);
+          console.log(currentDancer);
+        }
+
+      }
+    });
+
   });
 
   $(".addDancerButton").on("click", function(event){

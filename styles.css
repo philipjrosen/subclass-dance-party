@@ -36,6 +36,17 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
+.bouncy-dancer {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: absolute;
+}
+
+.friend {
+  border: 10px solid blue;
+}
+
 .madonna {
   background-image: url("http://38.media.tumblr.com/fe15b6d03ef461405c260d5a6ef6ef06/tumblr_mjcdhsaojX1s7n30go1_500.gif");
   background-size: 260px 200px;
